@@ -15,6 +15,28 @@ namespace pryMiPrimerApp
         public frmAlacena()
         {
             InitializeComponent();
+
+      }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
+        {
+
         }
     }
 }

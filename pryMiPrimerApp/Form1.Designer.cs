@@ -1,6 +1,6 @@
 ﻿namespace pryMiPrimerApp
 {
-    partial class Form1
+    partial class frmGestionDeGastos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionDeGastos));
             this.lblSueldo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.mrcGastos = new System.Windows.Forms.GroupBox();
@@ -171,7 +171,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // frmGestionDeGastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -182,7 +182,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblSueldo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "frmGestionDeGastos";
             this.Text = "Gestion de Gastos Mensuales";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mrcGastos.ResumeLayout(false);
