@@ -28,105 +28,144 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Shampoo");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Aconcdicionador");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Jabon liquido");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Jabon cuerpo");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("HIGIENE", new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10});
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Fideos");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Arroz");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Yerba");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Azucar");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Nodo5");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("ALIMENTOS", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5});
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.mrcProductos = new System.Windows.Forms.GroupBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.treeView2 = new System.Windows.Forms.TreeView();
-            this.treeView3 = new System.Windows.Forms.TreeView();
-            this.mrcProductos.SuspendLayout();
+            this.txtNombreDelProduto = new System.Windows.Forms.TextBox();
+            this.cmbCantidad = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.lblNombreDelProducto = new System.Windows.Forms.Label();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.Productos = new System.Windows.Forms.GroupBox();
+            this.cmdAceptar = new System.Windows.Forms.Button();
+            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.lstAlacena = new System.Windows.Forms.ListBox();
+            this.Productos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mrcProductos
+            // txtNombreDelProduto
             // 
-            this.mrcProductos.Controls.Add(this.treeView3);
-            this.mrcProductos.Controls.Add(this.treeView2);
-            this.mrcProductos.Controls.Add(this.treeView1);
-            this.mrcProductos.Location = new System.Drawing.Point(12, 12);
-            this.mrcProductos.Name = "mrcProductos";
-            this.mrcProductos.Size = new System.Drawing.Size(532, 426);
-            this.mrcProductos.TabIndex = 0;
-            this.mrcProductos.TabStop = false;
-            this.mrcProductos.Text = "Productos";
+            this.txtNombreDelProduto.Location = new System.Drawing.Point(140, 46);
+            this.txtNombreDelProduto.Name = "txtNombreDelProduto";
+            this.txtNombreDelProduto.Size = new System.Drawing.Size(121, 22);
+            this.txtNombreDelProduto.TabIndex = 0;
             // 
-            // treeView1
+            // cmbCantidad
             // 
-            this.treeView1.BackColor = System.Drawing.SystemColors.Menu;
-            this.treeView1.Location = new System.Drawing.Point(0, 32);
-            this.treeView1.Name = "treeView1";
-            treeNode7.Name = "Nodo1";
-            treeNode7.Text = "Shampoo";
-            treeNode8.Name = "Nodo2";
-            treeNode8.Text = "Aconcdicionador";
-            treeNode9.Name = "Nodo3";
-            treeNode9.Text = "Jabon liquido";
-            treeNode10.Name = "Nodo4";
-            treeNode10.Text = "Jabon cuerpo";
-            treeNode11.BackColor = System.Drawing.Color.Lavender;
-            treeNode11.Name = "Higiene";
-            treeNode11.Text = "HIGIENE";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode11});
-            this.treeView1.Size = new System.Drawing.Size(158, 97);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect_1);
+            this.cmbCantidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCantidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCantidad.FormattingEnabled = true;
+            this.cmbCantidad.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbCantidad.Location = new System.Drawing.Point(140, 120);
+            this.cmbCantidad.Name = "cmbCantidad";
+            this.cmbCantidad.Size = new System.Drawing.Size(121, 24);
+            this.cmbCantidad.TabIndex = 1;
             // 
-            // treeView2
+            // cmbCategoria
             // 
-            this.treeView2.Location = new System.Drawing.Point(0, 151);
-            this.treeView2.Name = "treeView2";
-            treeNode1.Name = "Nodo1";
-            treeNode1.Text = "Fideos";
-            treeNode2.Name = "Nodo2";
-            treeNode2.Text = "Arroz";
-            treeNode3.Name = "Nodo3";
-            treeNode3.Text = "Yerba";
-            treeNode4.Name = "Nodo4";
-            treeNode4.Text = "Azucar";
-            treeNode5.Name = "Nodo5";
-            treeNode5.Text = "Nodo5";
-            treeNode6.Name = "Nodo0";
-            treeNode6.Text = "ALIMENTOS";
-            this.treeView2.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6});
-            this.treeView2.Size = new System.Drawing.Size(158, 103);
-            this.treeView2.TabIndex = 1;
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Hiegene",
+            "Enlatados"});
+            this.cmbCategoria.Location = new System.Drawing.Point(140, 80);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(121, 24);
+            this.cmbCategoria.TabIndex = 2;
             // 
-            // treeView3
+            // lblNombreDelProducto
             // 
-            this.treeView3.Location = new System.Drawing.Point(219, 32);
-            this.treeView3.Name = "treeView3";
-            this.treeView3.Size = new System.Drawing.Size(156, 97);
-            this.treeView3.TabIndex = 2;
+            this.lblNombreDelProducto.AutoSize = true;
+            this.lblNombreDelProducto.Location = new System.Drawing.Point(-3, 46);
+            this.lblNombreDelProducto.Name = "lblNombreDelProducto";
+            this.lblNombreDelProducto.Size = new System.Drawing.Size(137, 16);
+            this.lblNombreDelProducto.TabIndex = 3;
+            this.lblNombreDelProducto.Text = "Nombre Del Producto";
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(0, 83);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(81, 20);
+            this.lblCategoria.TabIndex = 4;
+            this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(0, 124);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(75, 20);
+            this.lblCantidad.TabIndex = 5;
+            this.lblCantidad.Text = "Cantidad";
+            // 
+            // Productos
+            // 
+            this.Productos.Controls.Add(this.cmdCancelar);
+            this.Productos.Controls.Add(this.cmdAceptar);
+            this.Productos.Controls.Add(this.txtNombreDelProduto);
+            this.Productos.Controls.Add(this.lblCategoria);
+            this.Productos.Controls.Add(this.cmbCategoria);
+            this.Productos.Controls.Add(this.cmbCantidad);
+            this.Productos.Controls.Add(this.lblCantidad);
+            this.Productos.Controls.Add(this.lblNombreDelProducto);
+            this.Productos.Location = new System.Drawing.Point(12, 12);
+            this.Productos.Name = "Productos";
+            this.Productos.Size = new System.Drawing.Size(319, 265);
+            this.Productos.TabIndex = 7;
+            this.Productos.TabStop = false;
+            this.Productos.Text = "groupBox1";
+            // 
+            // cmdAceptar
+            // 
+            this.cmdAceptar.Location = new System.Drawing.Point(28, 191);
+            this.cmdAceptar.Name = "cmdAceptar";
+            this.cmdAceptar.Size = new System.Drawing.Size(106, 43);
+            this.cmdAceptar.TabIndex = 6;
+            this.cmdAceptar.Text = "Aceptar";
+            this.cmdAceptar.UseVisualStyleBackColor = true;
+            this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
+            // 
+            // cmdCancelar
+            // 
+            this.cmdCancelar.Location = new System.Drawing.Point(178, 191);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(107, 43);
+            this.cmdCancelar.TabIndex = 7;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            // 
+            // lstAlacena
+            // 
+            this.lstAlacena.FormattingEnabled = true;
+            this.lstAlacena.ItemHeight = 16;
+            this.lstAlacena.Location = new System.Drawing.Point(12, 283);
+            this.lstAlacena.Name = "lstAlacena";
+            this.lstAlacena.Size = new System.Drawing.Size(315, 132);
+            this.lstAlacena.TabIndex = 8;
             // 
             // frmAlacena
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 450);
-            this.Controls.Add(this.mrcProductos);
+            this.ClientSize = new System.Drawing.Size(376, 554);
+            this.Controls.Add(this.lstAlacena);
+            this.Controls.Add(this.Productos);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
-            this.mrcProductos.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmAlacena_Load);
+            this.Productos.ResumeLayout(false);
+            this.Productos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -134,9 +173,15 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.GroupBox mrcProductos;
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.TreeView treeView3;
-        private System.Windows.Forms.TreeView treeView2;
+        private System.Windows.Forms.TextBox txtNombreDelProduto;
+        private System.Windows.Forms.ComboBox cmbCantidad;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.Label lblNombreDelProducto;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.GroupBox Productos;
+        private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdAceptar;
+        private System.Windows.Forms.ListBox lstAlacena;
     }
 }

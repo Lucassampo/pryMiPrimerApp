@@ -12,6 +12,12 @@ namespace pryMiPrimerApp
 {
     public partial class frmAlacena : Form
     {
+        private string varNombreDelProducto;
+        private int varCantidad;
+        private object varCategoria;
+        private object lstCantidad;
+        private object lstCatProductos;
+
         public frmAlacena()
         {
             InitializeComponent();
@@ -36,6 +42,25 @@ namespace pryMiPrimerApp
 
         private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
         {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAlacena_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            varNombreDelProducto = txtNombreDelProduto.Text;
+            varCantidad = Convert.ToInt32(lblCantidad.Text);
+            varCategoria = lblCantidad.Text;
+            lstAlacena.Items.Add(varNombreDelProducto + " " +  varCategoria +" " + varCantidad );
 
         }
     }
