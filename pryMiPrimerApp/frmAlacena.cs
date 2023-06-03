@@ -58,10 +58,15 @@ namespace pryMiPrimerApp
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
             varNombreDelProducto = txtNombreDelProduto.Text;
-            varCantidad = Convert.ToInt32(lblCantidad.Text);
+            varCantidad = Convert.ToInt32(cmbCantidad.Text);
             varCategoria = lblCantidad.Text;
             lstAlacena.Items.Add(varNombreDelProducto + " " +  varCategoria +" " + varCantidad );
 
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -36,8 +36,8 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.Productos = new System.Windows.Forms.GroupBox();
-            this.cmdAceptar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cmdAceptar = new System.Windows.Forms.Button();
             this.lstAlacena = new System.Windows.Forms.ListBox();
             this.Productos.SuspendLayout();
             this.SuspendLayout();
@@ -123,7 +123,17 @@
             this.Productos.Size = new System.Drawing.Size(319, 265);
             this.Productos.TabIndex = 7;
             this.Productos.TabStop = false;
-            this.Productos.Text = "groupBox1";
+            this.Productos.Text = "Productos";
+            // 
+            // cmdCancelar
+            // 
+            this.cmdCancelar.Location = new System.Drawing.Point(178, 191);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(107, 43);
+            this.cmdCancelar.TabIndex = 7;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // cmdAceptar
             // 
@@ -134,15 +144,6 @@
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
             this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
-            // 
-            // cmdCancelar
-            // 
-            this.cmdCancelar.Location = new System.Drawing.Point(178, 191);
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(107, 43);
-            this.cmdCancelar.TabIndex = 7;
-            this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
             // 
             // lstAlacena
             // 
@@ -160,7 +161,7 @@
             this.ClientSize = new System.Drawing.Size(376, 554);
             this.Controls.Add(this.lstAlacena);
             this.Controls.Add(this.Productos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
             this.Load += new System.EventHandler(this.frmAlacena_Load);
