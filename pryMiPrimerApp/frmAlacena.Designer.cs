@@ -72,7 +72,11 @@
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Items.AddRange(new object[] {
             "Hiegene",
-            "Enlatados"});
+            "Enlatados",
+            "Carne",
+            "Productos Limpieza",
+            "Bebidas",
+            "vajillas"});
             this.cmbCategoria.Location = new System.Drawing.Point(140, 80);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(121, 24);
